@@ -1,0 +1,63 @@
+
+---
+title: "DSE Project - using csv file"
+output: github_document
+---
+
+```{r}
+library(readxl)
+library(ggplot2)
+library(reshape2)
+library(dplyr) 
+```
+```{r}
+data <- read_excel("team_stats_combined.xlsx")
+```
+```{r}
+head(data)
+```
+
+
+```{r}
+
+# Remove rows with NA (NaN) values in 'Hitting Percentage Pct.' or 'Team' columns
+data_clean <- data %>%
+  filter(!is.na(`Hitting Percentage Pct.`) & !is.na(Team))
+
+# Create the boxplot
+ggplot(data_clean, aes(x = Team, y = `Hitting Percentage Pct.`)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) + # Adjust angle and position
+  labs(title = "Boxplot of Hitting Percentage by Team",
+       x = "Team",
+       y = "Hitting Percentage Pct.") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(size = 8, angle = 45, hjust = 1, vjust = 1))  # Smaller text size and angle
+```
+
+
+
+
+```{r}
+# Clean data: Remove NA values for 'Hitting Percentage Pct.', 'Kills Per Set Per Set', and 'Assists Per Set Per Set'
+data_clean <- data %>%
+  filter(!is.na(`Hitting Percentage Pct.`) & 
+         !is.na(`Kills Per Set Per Set`) & 
+         !is.na(`Assists Per Set Per Set`))
+
+# Create a scatter plot with color encoding for 'Assists Per Set Per Set'
+ggplot(data_clean, aes(x = `Hitting Percentage Pct.`, 
+                       y = `Kills Per Set Per Set`, 
+                       color = `Assists Per Set Per Set`)) +
+  geom_point(alpha = 0.7, size = 3) + # Scatter plot points
+  geom_smooth(method = "lm", color = "black", se = TRUE) + # Overall regression line
+  labs(title = "Relationship Between Hitting Percentage, Kills, and Assists",
+       x = "Hitting Percentage Pct.",
+       y = "Kills Per Set Per Set",
+       color = "Assists Per Set") +
+  scale_color_gradient(low = "blue", high = "red") + # Color gradient for assists
+  theme_minimal()
+
+
+```
+
