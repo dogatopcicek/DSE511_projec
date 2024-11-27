@@ -33,8 +33,8 @@ R:
 - Imported the CSV file and performed data cleaning and visualization tasks.
 
 # Files in this Repository
-DSE511_Project.ipynb: The Jupyter notebook containing the Python analysis and visualizations.
-DSE_Project.Rmd: The main R script for data analysis and visualization.
-R code results.pdf: A PDF file containing plots generated from R for better visualization.
-team_stats_combined.xlsx: The dataset containing volleyball team statistics generated through Python.
-requirements.txt: List of Python libraries required for the project.
+- DSE511_Project.ipynb: The Jupyter notebook containing the Python analysis and visualizations.
+- DSE_Project.Rmd: The main R script for data analysis and visualization.
+- R code results.pdf: A PDF file containing plots generated from R for better visualization.
+- team_stats_combined.xlsx: The dataset containing volleyball team statistics generated through Python.
+- requirements.txt: List of Python libraries required for the project.
