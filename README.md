@@ -6,8 +6,20 @@ This repository contains the code and analysis for the DSE511 Project, which exp
 This project focuses on analyzing volleyball statistics collected from the NCAA website. The data includes metrics on team performance and is used to visualize the key trends and relationships. A workflow combining Python and R has been implemented for data scraping, cleaning, analysis, and visualization.
 
 # Approach
-Tools 
-# Python:
+Web Scraping:
+- Collected volleyball team statistics from the NCAA website using Python
+- Extracted relevant performance metrics such as Hitting Percentage, Kills per Set, and Assists per Set.
+Data Cleaning and Analysis:
+- Processed the scraped data in Python to remove missing values, standardize formats, and calculate overall statistics.
+- Saved the cleaned data into a CSV file (team_stats_combined.csv).
+Visualization:
+- Used Python to generate initial visualizations (e.g., histograms, bar charts, scatter plots) to identify trends and patterns.
+- Analyzed and visualized the cleaned data in R, producing scatter plots and boxplots for detailed insights.
+Result Compilation:
+- Consolidated visualizations and statistics in a comprehensive analysis.
+- Saved R-generated plots to a PDF for easy review.
+# Tools 
+Python:
 - All required libraries are listed in the requirements.txt file for easy installation. 
 - Librariees used for:
 - Web scraping data from the NCAA website using BeautifulSoup to collect volleyball team       
@@ -15,7 +27,7 @@ statistics.
 - Performing data analysis and generating descriptive statistics.
 - Creating visualizations (e.g., histograms, bar charts, scatter plots) to explore trends in   the data.
 - Saving the processed data and calculated overall statistics to a CSV file (team_stats_combined.csv) for further analysis in R.
-# R 
+R 
 - Libraris used: readxl, ggplot2, reshape2, dplyr
 - Imported the CSV file and performed data cleaning and visualization tasks.
 
