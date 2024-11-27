@@ -7,7 +7,7 @@ This project focuses on analyzing volleyball statistics collected from the NCAA 
 
 # Approach
 Tools 
-1- Python:
+# Python:
 - All required libraries are listed in the requirements.txt file for easy installation. 
 - Librariees used for:
 - Web scraping data from the NCAA website using BeautifulSoup to collect volleyball team       
@@ -15,7 +15,7 @@ statistics.
 - Performing data analysis and generating descriptive statistics.
 - Creating visualizations (e.g., histograms, bar charts, scatter plots) to explore trends in   the data.
 - Saving the processed data and calculated overall statistics to a CSV file (team_stats_combined.csv) for further analysis in R.
-2- R 
+# R 
 - Libraris used: readxl, ggplot2, reshape2, dplyr
 - Imported the CSV file and performed data cleaning and visualization tasks.
 
