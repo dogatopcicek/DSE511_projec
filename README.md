@@ -2,10 +2,10 @@
 # Overview
 This repository contains the code and analysis for the DSE511 Project, which explores the relationship between various team performance metrics in volleyball, such as Hitting Percentage, Kills per Set, and Assists per Set. The project utilizes both R and Python (Jupyter Notebook) for data analysis and visualization, with the goal of identifying key patterns and correlations within the dataset. Visualizations, such as scatter plots and boxplots, are created to help understand the performance dynamics between different teams. 
 
-#Description
+# Description
 This project focuses on analyzing volleyball statistics collected from the NCAA website. The data includes metrics on team performance and is used to visualize the key trends and relationships. A workflow combining Python and R has been implemented for data scraping, cleaning, analysis, and visualization.
 
-#Approach
+# Approach
 Tools 
 1- Python:
 - All required libraries are listed in the requirements.txt file for easy installation. 
@@ -19,8 +19,7 @@ statistics.
 - Libraris used: readxl, ggplot2, reshape2, dplyr
 - Imported the CSV file and performed data cleaning and visualization tasks.
 
-- 
-#Files in this Repository
+# Files in this Repository
 DSE511_Project.ipynb: The Jupyter notebook containing the Python analysis and visualizations.
 DSE_Project.Rmd: The main R script for data analysis and visualization.
 R code results.pdf: A PDF file containing plots generated from R for better visualization.
